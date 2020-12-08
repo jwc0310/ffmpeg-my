@@ -28,8 +28,8 @@ echo "开始编译 $TOOLCHAIN"
 --disable-filters \
 --enable-cross-compile \
 --cross-prefix=$CROSS_PREFIX \
---disable-shared \
---enable-static \
+--enable-shared \
+--disable-static \
 --sysroot=$NDK_ROOT/platforms/android-$ANDROID_API/arch-$ARCH \
 --extra-cflags="$CFLAGES" \
 --arch=$ARCH \
