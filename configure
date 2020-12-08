@@ -4209,7 +4209,8 @@ fi
 
 set_default target_os
 if test "$target_os" = android; then
-    cc_default="clang"
+    #cc_default="clang"
+    cc_default="gcc"
 fi
 
 ar_default="${cross_prefix}${ar_default}"
